@@ -13,7 +13,7 @@ In [main.tf](main.tf) inside the terraform block there are defined:
 - a variable block named `course`
 - a resource block `local_file` 
 
-[terraform.tfvars] file will contain values for each variable defined in main.tf and it will be loaded automatically. Any file with extension .auto.tfvars will be loaded too and overwrite the value of the variable.
+[terraform.tfvars] file will contain values for each variable defined in main.tf and it will be loaded automatically. Any file with extension .auto.tfvars will be loaded too and overwrite the value of the variable. Furthermore, you can use the file `prod.tfvars` by adding the flag `-var-file=prod.tfvars` when planning and applying your configuration.
 
 ## Try it yourself
 
@@ -23,4 +23,10 @@ Run the command:
 terraform init 
 ```
 
-And see what happens! Terraform should create a .terraform folder containing some information about the configuration you just run.
+Then:
+
+```bash
+terraform apply [-var-file]
+```
+
+To show a plan and apply it by typing 'yes'.

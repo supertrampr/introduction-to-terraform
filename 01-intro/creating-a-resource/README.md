@@ -20,3 +20,11 @@ terraform init
 ```
 
 And see what happens! Terraform should create a .terraform folder containing some information about the configuration you just run and additionally a `.terraform.lock.hcl` that include version of the provider you are using.
+
+To apply your configuration:
+
+```bash
+terraform apply
+```
+
+Type yes if you are satisfied with the plan.
