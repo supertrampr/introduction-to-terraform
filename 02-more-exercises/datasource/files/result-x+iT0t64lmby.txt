@@ -1,0 +1,15 @@
+Product: terraform
+Version: 1.13.1
+
+Access-Control-Allow-Headers: Accept, Cache-Control, X-Requested-With, Content-Type
+Access-Control-Allow-Methods: GET, OPTIONS
+Access-Control-Allow-Origin: *
+Access-Control-Max-Age: 86400
+Connection: keep-alive
+Content-Length: 298
+Content-Type: application/json
+Date: Wed, 03 Sep 2025 09:35:53 GMT
+Via: 1.1 1267cfea7779b313ab742be3bae1ae6a.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: fZsu_y2ogFKb7ku8dLymVFdtCZTjOPKBtkkKdUce-get4OtAz6QJxw==
+X-Amz-Cf-Pop: MXP53-P2
+X-Cache: Miss from cloudfront

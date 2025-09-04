@@ -1,0 +1,6 @@
+Product: ${product}
+Version: ${version}
+
+%{ for k, v in response_headers ~}
+${k}: ${v}
+%{ endfor ~}
