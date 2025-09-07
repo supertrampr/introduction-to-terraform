@@ -1,2 +1,5 @@
 #terraform files and directory
 .terraform
+*.tfstate*
+**/backend/*.hcl
+!**/backend/sample.hcl
