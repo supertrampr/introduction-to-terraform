@@ -12,6 +12,10 @@ on:
       - main
     paths:
       - "04-terraform-with-ci/**"
+
+env:
+  STORAGE_ACCOUNT_ACCESS_KEY: ${{ secrets.STORAGE_ACCOUNT_ACCESS_KEY }}
+
 jobs:
   install-terraform:
     name: "Install Terraform"
