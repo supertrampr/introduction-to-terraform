@@ -5,12 +5,12 @@ on:
     branches:
       - main
     paths:
-      - 04-terraform-with-ci/**
+      - "04-terraform-with-ci/**"
   pull_request:
     branches:
       - main
     paths:
-      - 04-terraform-with-ci/**
+      - "04-terraform-with-ci/**"
 jobs:
   install-terraform:
     name: "Install Terraform"
