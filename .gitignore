@@ -3,3 +3,10 @@
 *.tfstate*
 **/backend/*.hcl
 !**/backend/sample.hcl
+secrets.auto.tfvars
+
+#google credentials 
+**/credentials
+
+#ssh private key
+*.pem
