@@ -1,6 +1,6 @@
 # Introduction
 
-This folder contains a [Terraform](https://terraform.io) configuration to deploy real infrastructure on [Google Cloud](), such as:
+This folder contains a [Terraform](https://terraform.io) configuration to deploy real infrastructure on [Google Cloud](https://cloud.google.com/?hl=en), such as:
 
 - [Google Compute Instance](https://cloud.google.com/compute/docs/instances)
 - [Google VPC](https://cloud.google.com/vpc/docs)
