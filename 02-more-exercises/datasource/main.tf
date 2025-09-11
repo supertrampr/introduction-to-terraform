@@ -34,7 +34,7 @@ resource "local_file" "result" {
     # ignore_changes = [ 
     #   content
     # ]
-    prevent_destroy = false
+    prevent_destroy       = false
     create_before_destroy = false
   }
 }
