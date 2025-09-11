@@ -18,7 +18,7 @@ jobs:
     defaults: 
       run:
         shell: bash
-        working-directory: ./04-terraform-with-ci
+        working-directory: ./04-terraform-with-ci/virtual-network
     
     steps:
       - name: checkout
@@ -29,7 +29,7 @@ jobs:
         with:
           terraform_version: 1.13.0
       
-      - name: validate
+      - name: init
         id: init
         run: terraform init -backend-config="access_key=$STORAGE_ACCOUNT_ACCESS_KEY"
 
