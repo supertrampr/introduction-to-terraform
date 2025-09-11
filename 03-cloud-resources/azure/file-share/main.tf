@@ -2,23 +2,6 @@ data "azurerm_resource_group" "intro" {
   name = local.resource_group_name
 }
 
-data "azurerm_storage_account" "this" {
-  name                = local.storage_account_name
-  resource_group_name = data.azurerm_resource_group.intro.name
-}
-
-resource "azurerm_storage_share" "this" {
-  name               = "tobemount-${lower(var.owner)}"
-  quota              = 1
-  storage_account_id = data.azurerm_storage_account.this.id
-}
-
-resource "local_file" "this" {
-  filename        = "${path.root}/ssh_key.pem"
-  content         = module.virtual_machine.ssh_private_key
-  file_permission = "0400"
-}
-
 module "network" {
   source = "./modules/network"
 

@@ -10,5 +10,5 @@ output "vm_public_ip" {
 
 output "admin_username" {
   description = "Admin username of the vm."
-  value = azurerm_linux_virtual_machine.this.admin_username
+  value       = azurerm_linux_virtual_machine.this.admin_username
 }
