@@ -24,3 +24,9 @@ And then apply it with:
 ```bash
 terraform apply
 ```
+
+## CI 
+
+This example can be applied using GitHub actions, they will run if:
+- A push has been made on main branch (this will auto-approve the configuration)
+- Pull request to `main` branch: this will show you just the plan and then after merging the pull request it will trigger an apply
